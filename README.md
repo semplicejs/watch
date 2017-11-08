@@ -17,13 +17,13 @@ sempliceWatch does **not** require *any* changes to your code or method of devel
 
 Either through cloning with git or by using [npm](http://npmjs.org) (the recommended way):
 
-    npm install -g sempliceWatch
+    npm install -g semplice-watch
 
 And sempliceWatch will be installed globally to your system path.
 
 It is also possible to install locally:
 
-    npm install --save-dev sempliceWatch
+    npm install --save-dev semplice-watch
 
 With a local installation, sempliceWatch will not be available in your system path. Instead, the local installation of sempliceWatch can be run by calling it from within an npm script (such as `npm start`) or using `npx sempliceWatch`.
 
