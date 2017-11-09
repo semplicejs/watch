@@ -90,5 +90,5 @@
     "test": "npm run lint && npm run spec",
     "web": "node web"
   },
-  "version": "0.0.1"
+  "version": "0.0.2"
 }

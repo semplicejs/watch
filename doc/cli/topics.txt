@@ -1,6 +1,6 @@
 
-  config ................... default config options using nodemon.json
+  config ................... default config options using sempliceWatch.json
   authors .................. contributors to this project
-  whoami ................... I, AM, NODEMON \o/
+  whoami ................... I, AM, sempliceWatch \o/
 
-  Please contribute http://github.com/remy/nodemon/
+  Please contribute http://github.com/luisvilches/sempliceWatch/

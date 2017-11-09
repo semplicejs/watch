@@ -1,7 +1,7 @@
-# nodemon code arch
+# sempliceWatch code arch
 
 ```
-CLI -> parser -> nodemon options -> rules
+CLI -> parser -> sempliceWatch options -> rules
 
 rules -> configure -> watch -> start process
 ```
@@ -10,7 +10,7 @@ rules -> configure -> watch -> start process
 
 Watch src but only *.js and *.coffee
 
-    nodemon --watch src/ -e js,coffee app.js
+    sempliceWatch --watch src/ -e js,coffee app.js
 
 Parsed to:
 
@@ -26,7 +26,7 @@ Parsed to:
 
 Watch with no args:
 
-    nodemon
+    sempliceWatch
 
 Parsed to (assuming a package.json or index.js is found):
 

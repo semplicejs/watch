@@ -1,6 +1,6 @@
-# Sample nodemon.json
+# Sample sempliceWatch.json
 
-Here is an example (of a contrived) `nodemon.json` file:
+Here is an example (of a contrived) `sempliceWatch.json` file:
 
     {
       "restartable": "rs",
@@ -13,7 +13,7 @@ Here is an example (of a contrived) `nodemon.json` file:
         "js": "node --harmony"
       },
       "events": {
-        "restart": "osascript -e 'display notification \"App restarted due to:\n'$FILENAME'\" with title \"nodemon\"'"
+        "restart": "osascript -e 'display notification \"App restarted due to:\n'$FILENAME'\" with title \"sempliceWatch\"'"
       },
       "watch": [
         "test/fixtures/",
@@ -25,4 +25,4 @@ Here is an example (of a contrived) `nodemon.json` file:
       "ext": "js json"
     }
 
-Note that the `ignore` used is nodemon's default ignore rule. The complete defaults can be seen here: [defaults.js](https://github.com/remy/nodemon/blob/master/lib/config/defaults.js).
+Note that the `ignore` used is sempliceWatch's default ignore rule. The complete defaults can be seen here: [defaults.js](https://github.com/remy/sempliceWatch/blob/master/lib/config/defaults.js).

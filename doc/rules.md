@@ -1,6 +1,6 @@
 # Rules
 
-Given a nodemon.json file that contains:
+Given a sempliceWatch.json file that contains:
 
 ```json
 {
@@ -9,7 +9,7 @@ Given a nodemon.json file that contains:
 }
 ```
 
-Then nodemon detects changes, but what causes nodemon to restart? The ignored files or the watched files? Which wins?
+Then sempliceWatch detects changes, but what causes sempliceWatch to restart? The ignored files or the watched files? Which wins?
 
 ```js
 var files = ['server/foo.coffee', 'server/app.js'];

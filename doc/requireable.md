@@ -1,18 +1,18 @@
-# Nodemon as a required module
+# sempliceWatch as a required module
 
-Nodemon (as of 1.0.0) also works as a required module. At present, you can only require nodemon in to your project once (as there are static config variables), but you can re-run with new settings for a different application to monitor.
+sempliceWatch (as of 1.0.0) also works as a required module. At present, you can only require sempliceWatch in to your project once (as there are static config variables), but you can re-run with new settings for a different application to monitor.
 
-By requiring nodemon, you can extend it's functionality. Below is a simple example of using nodemon in your project:
+By requiring sempliceWatch, you can extend it's functionality. Below is a simple example of using sempliceWatch in your project:
 
 ```js
-var nodemon = require('nodemon');
+var sempliceWatch = require('semplice-watch');
 
-nodemon({
+sempliceWatch({
   script: 'app.js',
   ext: 'js json'
 });
 
-nodemon.on('start', function () {
+sempliceWatch.on('start', function () {
   console.log('App has started');
 }).on('quit', function () {
   console.log('App has quit');
@@ -22,35 +22,35 @@ nodemon.on('start', function () {
 });
 ```
 
-Nodemon will emit a number of [events](https://github.com/remy/nodemon/blob/master/doc/events.md) by default, and when in verbose mode will also emit a `log` event (which matches what the nodemon cli tool echos).
+sempliceWatch will emit a number of [events](https://github.com/remy/sempliceWatch/blob/master/doc/events.md) by default, and when in verbose mode will also emit a `log` event (which matches what the sempliceWatch cli tool echos).
 
 ## Arguments
 
-The `nodemon` function takes either an object (that matches the [nodemon config](https://github.com/remy/nodemon#config-files)) or can take a string that matches the arguments that would be used on the command line:
+The `sempliceWatch` function takes either an object (that matches the [sempliceWatch config](https://github.com/remy/sempliceWatch#config-files)) or can take a string that matches the arguments that would be used on the command line:
 
 ```js
-var nodemon = require('nodemon');
+var sempliceWatch = require('sempliceWatch');
 
-nodemon('-e "js json" app.js');
+sempliceWatch('-e "js json" app.js');
 ```
 
 ## Methods & Properties
 
-The `nodemon` object also has a few methods and properties. Some are exposed to help with tests, but have been listed here for completeness:
+The `sempliceWatch` object also has a few methods and properties. Some are exposed to help with tests, but have been listed here for completeness:
 
 ### Event handling
 
-This is simply the event emitter bus that exists inside nodemon exposed at the top level module (ie. it's the `events` api):
+This is simply the event emitter bus that exists inside sempliceWatch exposed at the top level module (ie. it's the `events` api):
 
-- `nodemon.on(event, fn)`
-- `nodemon.addListener(event, fn)`
-- `nodemon.once(event, fn)`
-- `nodemon.emit(event)`
-- `nodemon.removeAllListeners([event])`
+- `sempliceWatch.on(event, fn)`
+- `sempliceWatch.addListener(event, fn)`
+- `sempliceWatch.once(event, fn)`
+- `sempliceWatch.emit(event)`
+- `sempliceWatch.removeAllListeners([event])`
 
 Note: there's no `removeListener` (happy to take a pull request if it's needed).
 
 ### Test utilities
 
-- `nodemon.reset()` - reverts nodemon's internal state to a clean slate
-- `nodemon.config` - a reference to the internal config nodemon uses
+- `sempliceWatch.reset()` - reverts sempliceWatch's internal state to a clean slate
+- `sempliceWatch.config` - a reference to the internal config sempliceWatch uses
