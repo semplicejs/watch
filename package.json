@@ -64,7 +64,7 @@
   "engines": {
     "node": ">=0.8"
   },
-  "homepage": "http://sempliceWatch.io",
+  "homepage": "",
   "keywords": [
     "monitor",
     "development",
@@ -78,7 +78,7 @@
   "name": "semplice-watch",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/remy/sempliceWatch.git"
+    "url": "git+https://github.com/semplicejs/watch.git"
   },
   "scripts": {
     ":spec": "mocha --timeout 30000 --ui bdd test/**/*.test.js",
@@ -90,5 +90,5 @@
     "test": "npm run lint && npm run spec",
     "web": "node web"
   },
-  "version": "0.0.2"
+  "version": "0.0.3"
 }
